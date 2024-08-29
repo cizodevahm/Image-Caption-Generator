@@ -34,22 +34,24 @@ pip install numpy pillow keras tensorflow tqdm
 
 ## Functions
 **Training Functions**
+
 -```load_doc(filename)```: Loads a text file into memory.
 -```all_img_captions(filename)```: Retrieves all images with their captions.
 -```cleaning_text(captions)```: Cleans the text by lowercasing, removing punctuation, and filtering out 
-                                words with numbers.
+words with numbers.
 -```text_vocabulary(descriptions)```: Builds a vocabulary of all unique words.
 -```save_descriptions(descriptions, filename)```: Saves all descriptions to a file.
 -```extract_features(directory)```: Extracts features from images using the Xception model.
 -```data_generator(descriptions, features, tokenizer, max_length)```: Generates input-output sequence 
-                                                                      pairs for training.
+pairs for training.
 -```define_model(vocab_size, max_length)```: Defines the image captioning model architecture.
 
 **Testing Functions**
+
 -```extract_features(filename, model)```: Extracts features from an image using the Xception model.
 -```word_for_id(integer, tokenizer)```: Maps an integer to a word using the tokenizer.
 -```generate_desc(model, tokenizer, photo, max_length)```: Generates a caption for an image using the 
-                                                           trained model.
+trained model.
 
 ## License
 This project is licensed under the MIT License.
