@@ -26,7 +26,7 @@ pip install numpy pillow keras tensorflow tqdm
 
 **Testing**
 1. Run the Testing Script:
- - Use the provided testing_caption_generator.py script to generate captions for new images.
+ - Use the provided ```testing_caption_generator.py``` script to generate captions for new images.
  - Example usage:
   ```bash
    python testing_caption_generator.py --image <path_to_image>
